@@ -3,4 +3,4 @@ class SomeClass(object):
     def hello(cls):
         print('Hello, класс {}'.format(cls.__name__))
 
-SomeClass.hello() # Hello, класс SomeClass
+SomeClass.hello() # Hello, класс SomeClass +
