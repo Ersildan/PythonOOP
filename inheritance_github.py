@@ -9,10 +9,10 @@ print(dog.className) # Mammal
 print('-' * 20)
 
 
-class Horse():
+class Horse:
     isHorse = True
 
-class Donkey():
+class Donkey:
     isDonkey = True
 
 class Mule(Horse, Donkey):
