@@ -1,4 +1,4 @@
-class Mammal():
+class Mammal:
     className = 'Mammal'
 
 class Dog(Mammal):
