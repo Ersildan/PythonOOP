@@ -10,7 +10,7 @@ class Person:
 
     def description_person(self):
         """Получение описания человека"""
-        description = f"Имя: {self.name}, возраст: {self.age}, рост: {self.height} см, вес: {self.weight} кг"
+        description = f"Имя его {self.name}, возраст {self.age}, рост {self.height} см, вес {self.weight} пельменей"
         print(description)
 
     def get_weight(self):
@@ -21,15 +21,7 @@ class Person:
         """Изменение веса человека"""
         self.weight = kg
 
-print('***Class Person ***')
-man = Person('Андрей', 31, 173)
-man.description_person() # Имя: Андрей, возраст: 31, рост: 173, вес: 60
-man.wight = 110
-man.get_weight()
-man.update_weight(110) # Меняем на 110 кг
-man.get_weight() # вызываем метод Вес нашего человека 110 кг
 
-print('\n***Class Warrior ***')
 class Warrior(Person):
     """Создаем класс воин"""
 
@@ -51,12 +43,3 @@ class Warrior(Person):
         """Обновление заряда ярости"""
         self.rage = power
 
-warrior = Warrior('Конор', 32, 200)
-# warrior.update_weight(150) # Меняем вес Конора с 200 на 150
-# warrior.description_person() # Имя: Конор, возраст: 32, рост: 200 см, вес: 110 кг
-
-warrior.get_rage()
-warrior.description_person()
-warrior.update_rage(66)
-warrior.get_rage()
-warrior.description_person()
