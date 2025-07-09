@@ -1,27 +1,4 @@
-class Person:
-    """Создаём человека"""
-
-    def __init__(self, name, age, height):
-        """Инициализация атрибуты человека"""
-        self.name = name
-        self.age = age
-        self.height = height
-        self.weight = 100
-
-    def description_person(self):
-        """Получение описания человека"""
-        description = f"Имя: {self.name}, возраст: {self.age}, рост: {self.height} см, вес: {self.weight} кг"
-        print(description)
-
-    def get_weight(self):
-        """Получение веса человека"""
-        print(f"Вес нашего человека: {self.weight} кг")
-
-    def update_weight(self, kg):
-        """Изменение веса человека"""
-        self.weight = kg
-
-man = Person('Андрей', 31, 173)
+from base_person import Person
 
 #man.description_person() # Имя: Андрей, возраст: 31, рост: 173, вес: 60
 #man.wight = 110
